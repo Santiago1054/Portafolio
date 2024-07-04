@@ -90,6 +90,32 @@ Algunas clases utilitarias en el paquete java.util y otros paquetes estándar de
  - trim(): Elimina los espacios en blanco iniciales y finales.
  - split(String regex): Divide la cadena en un array de cadenas.
    >String[] words = str.split(", "); // ["Hello", "world!"]
+- startsWith(String prefix): Devuelve true si la cadena comienza con el prefijo especificado.
+- endsWith(String suffix): Devuelve true si la cadena termina con el sufijo especificado.
+- isEmpty(): Devuelve true si la longitud de la cadena es 0.
+- matches(String regex): Indica si esta cadena coincide con la expresión regular dada.
+- compareTo(String anotherString): Compara dos cadenas lexicográficamente.
+- compareToIgnoreCase(String str): Compara dos cadenas lexicográficamente, ignorando las diferencias entre mayúsculas y minúsculas.
+- concat(String str): Concatena la cadena especificada al final de esta cadena.
+- valueOf(): Métodos estáticos que convierten diferentes tipos de datos en cadenas.
+- codePointAt(int index): Devuelve el valor Unicode del carácter en el índice especificado.
+- codePointBefore(int index): Devuelve el valor Unicode del carácter antes del índice especificado.
+- codePointCount(int beginIndex, int endIndex): Devuelve el número de valores Unicode en la subcadena especificada.
+- contentEquals(CharSequence cs): Compara esta cadena con la secuencia de caracteres especificada.
+- getBytes(): Codifica esta cadena en una secuencia de bytes usando el conjunto de caracteres predeterminado de la plataforma.
+  >byte[] bytes = str.getBytes(); // [72, 101, 108, 108, 111]
+-  getBytes(Charset charset): Codifica esta cadena en una secuencia de bytes usando el conjunto de caracteres especificado.
+   >byte[] bytesUTF8 = str.getBytes(StandardCharsets.UTF_8);
+- getBytes(String charsetName): Codifica esta cadena en una secuencia de bytes usando el conjunto de caracteres especificado.
+- getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin): Copia los caracteres de la cadena en un array de caracteres.
+- regionMatches(int toffset, String other, int ooffset, int len): Prueba si las subcadenas de esta cadena y la cadena especificada son iguales.
+- regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len): Prueba si las subcadenas de esta cadena y la cadena especificada son iguales, ignorando las diferencias entre mayúsculas y minúsculas.
+- subSequence(int beginIndex, int endIndex): Devuelve una nueva secuencia de caracteres que es una subsecuencia de esta secuencia.
+- toCharArray(): Convierte esta cadena en un nuevo array de caracteres.
+- join(CharSequence delimiter, CharSequence... elements): Devuelve una nueva cadena que es la concatenación de los elementos, separados por el delimitador especificado.
+- format(String format, Object... args): Devuelve una cadena formateada usando la cadena de formato especificada y los argumentos.
+- repeat(int count): Devuelve una cadena cuya representación es la concatenación de esta cadena repetida el número de veces especificado.
+- 
 ## Métodos de la Clase Math
 - Math.max(a, b): Devuelve el mayor de los dos números.
 - Math.min(a, b): Devuelve el menor de los dos números.
