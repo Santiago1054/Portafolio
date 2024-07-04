@@ -20,6 +20,11 @@ Las listas son una de las estructuras de datos básicas en la programación Java
 Las listas de Java pertenecen a la interfaz collections y deben importarse desde el paquete java.util. Las clases de implementación incluyen Java ArrayList, LinkedList, Vector y Stack. Puedes declarar las distintas instancias de la lista de la siguiente manera:
 ### Primero se importa la libreria 
 > import java.util.ArrayList;
+
+
+### Sintaxis recomendada
+![Screenshot 2024-07-04 140827](https://github.com/Santiago1054/Portafolio/assets/170820106/40c119b3-e5de-43c5-b667-c2dee944f94d)
+# Otras formas		
 ### linkedList 
 > List linkedList = new LinkedList(); // LinkedList
 ### arrayList 
@@ -28,13 +33,6 @@ Las listas de Java pertenecen a la interfaz collections y deben importarse desde
 >List vecList = new Vector(); // Vector
 ### stackList
 > List stackList = new Stack(); //Stack
-
-### Sintaxis recomendada
-- List <String> lista_1 = new ArrayList<>(size);; // Esta forma es recomendable (Si se sabe el tamano de la lista es mejor asignarle un tamano)
-
-- List <String> lista_2 = new LinkedList<>() // Esta forma es recomendable
-		
-
 
 Las listas se utilizan en aplicaciones de bases de datos para almacenar y acceder a grandes registros de consultas a bases de datos. En las interfaces gráficas de usuario, las listas Java suelen utilizarse para mostrar una lista de elementos, por ejemplo, las opciones de un menú desplegable o los distintos artículos de una tienda online.
 
@@ -49,6 +47,72 @@ Estas son las ventajas más importantes respecto a usar listas en Java:
 > - Las listas en Java incluyen métodos para agregar, eliminar y modificar elementos. Esto sirve para simplificar la manipulación de la información, ya que da una interfaz intuitiva para los programadores.
 > 
 Con este tipo de estructuras de datos, los programadores logran tener varios tipos de implementación, lo que da posibilidades variadas para distintos tipos de uso.
+
+# Metodos 
+# Métodos Básicos de la Clase Object
+Estos métodos son heredados por todas las clases en Java:
+
+- toString(): Devuelve una representación en cadena del objeto.
+- equals(Object obj): Compara si dos objetos son iguales.
+- hashCode(): Devuelve un código hash para el objeto.
+- clone(): Crea y devuelve una copia del objeto.
+- finalize(): Llamado por el recolector de basura cuando no hay más referencias al objeto.
+# Métodos Estáticos en Clases Utilitarias
+Algunas clases utilitarias en el paquete java.util y otros paquetes estándar de Java:
+
+## Arrays:
+- Arrays.sort(array): Ordena un array.
+- Arrays.binarySearch(array, key): Busca un elemento en un array ordenado.
+- Collections:
+- Collections.sort(list): Ordena una lista.
+- Collections.shuffle(list): Mezcla los elementos de una lista.
+## Math:
+- Math.max(a, b): Devuelve el máximo de dos números.
+- Math.min(a, b): Devuelve el mínimo de dos números.
+- Math.abs(a): Devuelve el valor absoluto de un número.
+- Math.sqrt(a): Devuelve la raíz cuadrada de un número.
+## ArrayList:
+- add(element): Añade un elemento al final de la lista.
+- get(index): Obtiene el elemento en la posición especificada.
+- size(): Devuelve el número de elementos en la lista.
+## String:
+- length(): Devuelve la longitud de la cadena.
+- substring(int beginIndex, int endIndex): Devuelve una nueva cadena que es un subconjunto de la cadena original.
+  >String sub = str.substring(0, 2); // "He"
+  >
+ - toUpperCase(): Devuelve la cadena en mayúsculas.
+ - toLowerCase(): Devuelve la cadena en minúsculas.
+ - equals(String anotherString): Compara si dos cadenas son iguales.
+ - contains(CharSequence s): Devuelve true si la cadena contiene la secuencia especificada.
+ - indexOf(String str): Devuelve el índice de la primera aparición de la cadena especificada.
+ - lastIndexOf(String str): Devuelve el índice de la última aparición de la cadena especificada.
+ - replace(char oldChar, char newChar): Reemplaza todas las apariciones del carácter especificado.
+ - trim(): Elimina los espacios en blanco iniciales y finales.
+ - split(String regex): Divide la cadena en un array de cadenas.
+   >String[] words = str.split(", "); // ["Hello", "world!"]
+## Métodos de la Clase Math
+- Math.max(a, b): Devuelve el mayor de los dos números.
+- Math.min(a, b): Devuelve el menor de los dos números.
+- Math.abs(a): Devuelve el valor absoluto de un número.
+- Math.pow(a, b): Devuelve a elevado a la potencia de b.
+- Math.sqrt(a): Devuelve la raíz cuadrada de un número.
+- Math.random(): Devuelve un número aleatorio entre 0.0 y 1.0.
+## Métodos de la Clase Arrays
+- Arrays.toString(array): Devuelve una representación en cadena del array.
+- Arrays.sort(array): Ordena el array en orden ascendente.
+- Arrays.binarySearch(array, key): Busca el elemento especificado en el array ordenado y devuelve su índice.
+- Arrays.copyOf(array, newLength): Copia el array original a un nuevo array con la longitud especificada.
+## Métodos de la Clase Collections
+- Collections.sort(list): Ordena la lista en orden ascendente.
+- Collections.reverse(list): Invierte el orden de los elementos en la lista.
+- Collections.shuffle(list): Mezcla los elementos de la lista de forma aleatoria.
+- Collections.max(collection): Devuelve el elemento máximo de la colección.
+- Collections.min(collection): Devuelve el elemento mínimo de la colección.
+## Métodos de la Clase Files
+- Files.readAllLines(path): Lee todas las líneas de un archivo y las devuelve como una lista de cadenas.
+- Files.write(path, lines): Escribe las líneas especificadas en el archivo.
+- Files.copy(source, target): Copia el archivo especificado.
+- Files.move(source, target): Mueve el archivo especificado.
 
 
 
