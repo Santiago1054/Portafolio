@@ -147,12 +147,32 @@ Algunas clases utilitarias en el paquete java.util y otros paquetes estándar de
 - copySign(double magnitude, double sign): Devuelve el primer argumento con el signo del segundo argumento.
 - addExact(int x, int y): Devuelve la suma exacta de los argumentos, arrojando una excepción si el resultado desborda un valor int.
 - subtractExact(int x, int y): Devuelve la diferencia exacta de los argumentos, arrojando una excepción si el resultado desborda un valor int.
+- multiplyExact(int x, int y): Devuelve el producto exacto de los argumentos, arrojando una excepción si el resultado desborda un valor int.
+- toIntExact(long value): Devuelve el valor int exacto de un argumento long, arrojando una excepción si el valor no cabe en un int.
+- incrementExact(int a): Devuelve el argumento incrementado por uno, arrojando una excepción si el resultado desborda un valor int.
+- log(double a): Devuelve el logaritmo natural (base e) de un valor doble.
+- log10(double a): Devuelve el logaritmo en base 10 de un valor doble.max(long a, long b): Devuelve el mayor de dos valores long.
+    > long result = Math.max(100L, 200L); // 200
+- min(long a, long b): Devuelve el menor de dos valores long.
+- toDegrees(double angrad): Convierte un ángulo medido en radianes a un ángulo aproximadamente equivalente medido en grados.
+- toRadians(double angdeg): Convierte un ángulo medido en grados a un ángulo aproximadamente equivalente medido en radianes.
 - 
 ## Métodos de la Clase Arrays
 - Arrays.toString(array): Devuelve una representación en cadena del array.
 - Arrays.sort(array): Ordena el array en orden ascendente.
 - Arrays.binarySearch(array, key): Busca el elemento especificado en el array ordenado y devuelve su índice.
 - Arrays.copyOf(array, newLength): Copia el array original a un nuevo array con la longitud especificada.
+- equals(type[] a, type[] a2): Compara dos arreglos para determinar si son iguales.
+- fill(type[] a, type val): Asigna el valor especificado a cada elemento de un arreglo.
+- copyOf(type[] original, int newLength): Copia el arreglo especificado, truncándolo o rellenándolo con ceros si es necesario para obtener la longitud especificada.
+- copyOfRange(type[] original, int from, int to): Copia la porción del arreglo especificado, especificada por el rango inicial y final.
+- mismatch(type[] a, type[] b): Encuentra y devuelve el índice del primer elemento diferente entre dos arreglos, o -1 si son iguales.
+- setAll(type[] array, IntUnaryOperator generator): Establece todos los elementos de un arreglo usando un generador basado en el índice.
+ > int[] array = new int[5]; Arrays.setAll(array, index -> index * 2); // Ahora array es {0, 2, 4, 6, 8}
+- deepEquals(Object[] a1, Object[] a2): Compara dos arreglos multidimensionales para determinar si son iguales.
+- deepToString(Object[] a): Devuelve una representación de cadena del arreglo multidimensional especificado.
+- parallelSort(type[] a): Ordena un arreglo en orden ascendente de manera
+- 
 ## Métodos de la Clase Collections
 - Collections.sort(list): Ordena la lista en orden ascendente.
 - Collections.reverse(list): Invierte el orden de los elementos en la lista.
