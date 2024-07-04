@@ -123,6 +123,31 @@ Algunas clases utilitarias en el paquete java.util y otros paquetes estándar de
 - Math.pow(a, b): Devuelve a elevado a la potencia de b.
 - Math.sqrt(a): Devuelve la raíz cuadrada de un número.
 - Math.random(): Devuelve un número aleatorio entre 0.0 y 1.0.
+- sin(double a): Devuelve el seno trigonométrico de un ángulo especificado (en radianes).
+ > double result = Math.sin(Math.PI / 2); // 1.0
+- cos(double a): Devuelve el coseno trigonométrico de un ángulo especificado (en radianes).
+  >double result = Math.cos(0); // 1.0
+- tan(double a): Devuelve la tangente trigonométrica de un ángulo especificado (en radianes).
+- asin(double a): Devuelve el arco seno de un valor; el resultado está en el rango de -pi/2 a pi/2.
+- acos(double a): Devuelve el arco coseno de un valor; el resultado está en el rango de 0.0 a pi.
+- atan(double a): Devuelve el arco tangente de un valor; el resultado está en el rango de -pi/2 a pi/2.
+- atan2(double y, double x): Convierte las coordenadas rectangulares (x, y) en un ángulo polar.
+- Math.hypot(double x, double y): Devuelve sqrt(x² + y²) sin desbordamiento ni pérdida intermedia de precisión.
+- cbrt(double a): Devuelve la raíz cúbica de un valor.
+- expm1(double x): Devuelve ex - 1.
+- log1p(double x): Devuelve el logaritmo natural de la suma de un valor y 1.
+- scalb(double d, int scaleFactor): Devuelve d × 2^scaleFactor calculado de forma precisa.
+- nextAfter(double start, double direction): Devuelve el flotante más cercano en la dirección de un segundo valor.
+- nextUp(double d): Devuelve el flotante más cercano mayor que d.
+- nextDown(double d): Devuelve el flotante más cercano menor que d.
+- rint(double a): Devuelve el entero más cercano como un valor de punto flotante.
+- ulp(double d): Devuelve la magnitud del paso de incremento más pequeño entre dos valores de punto flotante adyacentes.
+- floorDiv(int x, int y): Devuelve el cociente de la división de enteros, redondeado hacia abajo.
+- floorMod(int x, int y): Devuelve el resto de la división de enteros, redondeado hacia abajo.
+- copySign(double magnitude, double sign): Devuelve el primer argumento con el signo del segundo argumento.
+- addExact(int x, int y): Devuelve la suma exacta de los argumentos, arrojando una excepción si el resultado desborda un valor int.
+- subtractExact(int x, int y): Devuelve la diferencia exacta de los argumentos, arrojando una excepción si el resultado desborda un valor int.
+- 
 ## Métodos de la Clase Arrays
 - Arrays.toString(array): Devuelve una representación en cadena del array.
 - Arrays.sort(array): Ordena el array en orden ascendente.
