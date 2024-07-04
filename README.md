@@ -68,22 +68,23 @@ Estos métodos son heredados por todas las clases en Java:
 ## String
 ## Longitud
 >- str.length(): Devuelve la longitud de la cadena.
+ >![image](https://github.com/Santiago1054/Portafolio/assets/170820106/2459bb06-edc2-40f8-a1f1-0157e575ee8f)
 ## Modifican
 >- str.substring(int beginIndex, int endIndex): Devuelve una nueva cadena que es un subconjunto de la cadena original.
->  
-  >String sub = str.substring(0, 2); // "He"
+ >![image](https://github.com/Santiago1054/Portafolio/assets/170820106/2a50f86a-6137-4fc7-86f0-7ea987220d0e)
+>
 >- str. concat(String str): Concatena la cadena especificada al final de esta cadena.
->  
+  >  ![image](https://github.com/Santiago1054/Portafolio/assets/170820106/e6d10e65-b82e-438e-880e-7a673fda946a)
 >- str.valueOf(): Métodos estáticos que convierten diferentes tipos de datos en cadenas.
->  
+  > ![image](https://github.com/Santiago1054/Portafolio/assets/170820106/13d66e28-73f0-493b-8f99-904b822c6ff5) 
 >- str.codePointAt(int index): Devuelve el valor Unicode del carácter en el índice especificado.
->  
+  >  ![image](https://github.com/Santiago1054/Portafolio/assets/170820106/b49aa8c2-b68c-4ea3-8a40-149e235659d9)
 >- str.codePointBefore(int index): Devuelve el valor Unicode del carácter antes del índice especificado.
->  
+  > ![image](https://github.com/Santiago1054/Portafolio/assets/170820106/f922b189-16ad-44d4-b18d-7db2e4271b24) 
 >- str.codePointCount(int beginIndex, int endIndex): Devuelve el número de valores Unicode en la subcadena especificada.
->  
+  >  ![image](https://github.com/Santiago1054/Portafolio/assets/170820106/f4a02235-d0b4-42ef-b1dc-104fd5e00745)
 >- str.subSequence(int beginIndex, int endIndex): Devuelve una nueva secuencia de caracteres que es una subsecuencia de esta secuencia.
->  
+  >  
 >- str.join(CharSequence delimiter, CharSequence... elements): Devuelve una nueva cadena que es la concatenación de los elementos, separados por el delimitador especificado.
 >  
 >- str.format(String format, Object... args): Devuelve una cadena formateada usando la cadena de formato especificada y los argumentos.
@@ -92,35 +93,50 @@ Estos métodos son heredados por todas las clases en Java:
 >  
 ## Conversores
  - str.toUpperCase(): Devuelve la cadena en mayúsculas.
+     >![image](https://github.com/Santiago1054/Portafolio/assets/170820106/ce88347b-0e9b-47c4-8955-105787bcfcb5)
  - str.toLowerCase(): Devuelve la cadena en minúsculas.
+     >![image](https://github.com/Santiago1054/Portafolio/assets/170820106/9978f817-1943-45dd-a6bb-13703602ab9e)
  - str.toCharArray(): Convierte esta cadena en un nuevo array de caracteres.
 ## Validacion
  - str.equals(String anotherString): Compara si dos cadenas son iguales.
  - str.contains(CharSequence s): Devuelve true si la cadena contiene la secuencia especificada.
+   >![image](https://github.com/Santiago1054/Portafolio/assets/170820106/8aacc63d-3a68-4c8a-a247-653f1d40e9b7)
  - str.startsWith(String prefix): Devuelve true si la cadena comienza con el prefijo especificado.
+   >![image](https://github.com/Santiago1054/Portafolio/assets/170820106/c96d36f9-5b0d-4f0d-8770-0adbbc4a3af3)
+
  - str.endsWith(String suffix): Devuelve true si la cadena termina con el sufijo especificado.
+    >![image](https://github.com/Santiago1054/Portafolio/assets/170820106/95188933-8542-469e-8472-f3f88990296e)
  - str.isEmpty(): Devuelve true si la longitud de la cadena es 0.
  - str.matches(String regex): Indica si esta cadena coincide con la expresión regular dada.
  - str.compareTo(String anotherString): Compara dos cadenas lexicográficamente.
+     >![image](https://github.com/Santiago1054/Portafolio/assets/170820106/8cca2e60-27fc-4e60-9f30-b77206c92b84)
  - str.compareToIgnoreCase(String str): Compara dos cadenas lexicográficamente, ignorando las diferencias entre mayúsculas y minúsculas.
+    >![image](https://github.com/Santiago1054/Portafolio/assets/170820106/96983527-ff40-459d-a2c8-d624b7b8cb0b)
  - str.contentEquals(CharSequence cs): Compara esta cadena con la secuencia de caracteres especificada.
- - - str.regionMatches(int toffset, String other, int ooffset, int len): Prueba si las subcadenas de esta cadena y la cadena especificada son iguales.
+   > ![image](https://github.com/Santiago1054/Portafolio/assets/170820106/dd44e6f5-1646-49d9-a9cf-56e7443fc63a)
+
+ - str.regionMatches(int toffset, String other, int ooffset, int len): Prueba si las subcadenas de esta cadena y la cadena especificada son iguales.
+   >![image](https://github.com/Santiago1054/Portafolio/assets/170820106/28e33287-844c-45f9-b582-702a6bb4ad2f)
 - str.regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len): Prueba si las subcadenas de esta cadena y la cadena especificada son iguales, ignorando las diferencias entre mayúsculas y minúsculas.
 ## indices
  - str.indexOf(String str): Devuelve el índice de la primera aparición de la cadena especificada.
  - str.lastIndexOf(String str): Devuelve el índice de la última aparición de la cadena especificada.
 ## Remplazan
  -str. replace(char oldChar, char newChar): Reemplaza todas las apariciones del carácter especificado.
+   >![image](https://github.com/Santiago1054/Portafolio/assets/170820106/8a46d08e-6e9e-4cb5-9a0d-414290cc38ef)
  - str.trim(): Elimina los espacios en blanco iniciales y finales.
+  >![image](https://github.com/Santiago1054/Portafolio/assets/170820106/33caedf0-c4da-4950-b148-868afbde2462)
  - str.split(String regex): Divide la cadena en un array de cadenas.
+     >![image](https://github.com/Santiago1054/Portafolio/assets/170820106/bda2e9be-5b62-4ab0-a013-8760a50206cc)
    >String[] words = str.split(", "); // ["Hello", "world!"]
 ## Bytes 
 - str.getBytes(): Codifica esta cadena en una secuencia de bytes usando el conjunto de caracteres predeterminado de la plataforma.
-  >str.byte[] bytes = str.getBytes(); // [72, 101, 108, 108, 111]
+  >![image](https://github.com/Santiago1054/Portafolio/assets/170820106/4bb5430b-4e82-4c67-9270-a18995019026)
 -  str.getBytes(Charset charset): Codifica esta cadena en una secuencia de bytes usando el conjunto de caracteres especificado.
-   >byte[] bytesUTF8 = str.getBytes(StandardCharsets.UTF_8);
-- str.getBytes(String charsetName): Codifica esta cadena en una secuencia de bytes usando el conjunto de caracteres especificado.
+   >![image](https://github.com/Santiago1054/Portafolio/assets/170820106/b1cab3f2-bfa0-41f9-996a-6cdbbdffaff5)
+
 - str.getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin): Copia los caracteres de la cadena en un array de caracteres.
+  > ![image](https://github.com/Santiago1054/Portafolio/assets/170820106/c958d7f6-2f30-45c0-b818-948f6af23b02)
 
 
 
