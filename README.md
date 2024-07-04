@@ -1,5 +1,5 @@
 
-## Table of Contents
+## Tabla contenido listas
 
 
 - [LISTAS](#listas)
@@ -56,15 +56,78 @@ Estos métodos son heredados por todas las clases en Java:
 - hashCode(): Devuelve un código hash para el objeto.
 - clone(): Crea y devuelve una copia del objeto.
 - finalize(): Llamado por el recolector de basura cuando no hay más referencias al objeto.
-# Métodos Estáticos en Clases Utilitarias
-Algunas clases utilitarias en el paquete java.util y otros paquetes estándar de Java:
 
-## Arrays:
-- Arrays.sort(array): Ordena un array.
-- Arrays.binarySearch(array, key): Busca un elemento en un array ordenado.
-- Collections:
-- Collections.sort(list): Ordena una lista.
-- Collections.shuffle(list): Mezcla los elementos de una lista.
+  ## Tabla contenido String
+- [LONGITUD](#longitud)
+- [MODIFICAN](#modifican)
+- [CONVERSORES](#conversores)
+- [CONVERSORES](#conversores)
+- [VALIDACION](#validacion)
+- [REMPLAZAN](#remplazan)
+- [BYTES](#bytes)
+## String
+## Longitud
+>- str.length(): Devuelve la longitud de la cadena.
+## Modifican
+>- str.substring(int beginIndex, int endIndex): Devuelve una nueva cadena que es un subconjunto de la cadena original.
+>  
+  >String sub = str.substring(0, 2); // "He"
+>- str. concat(String str): Concatena la cadena especificada al final de esta cadena.
+>  
+>- str.valueOf(): Métodos estáticos que convierten diferentes tipos de datos en cadenas.
+>  
+>- str.codePointAt(int index): Devuelve el valor Unicode del carácter en el índice especificado.
+>  
+>- str.codePointBefore(int index): Devuelve el valor Unicode del carácter antes del índice especificado.
+>  
+>- str.codePointCount(int beginIndex, int endIndex): Devuelve el número de valores Unicode en la subcadena especificada.
+>  
+>- str.subSequence(int beginIndex, int endIndex): Devuelve una nueva secuencia de caracteres que es una subsecuencia de esta secuencia.
+>  
+>- str.join(CharSequence delimiter, CharSequence... elements): Devuelve una nueva cadena que es la concatenación de los elementos, separados por el delimitador especificado.
+>  
+>- str.format(String format, Object... args): Devuelve una cadena formateada usando la cadena de formato especificada y los argumentos.
+>  
+>- str.repeat(int count): Devuelve una cadena cuya representación es la concatenación de esta cadena repetida el número de veces especificado
+>  
+## Conversores
+ - str.toUpperCase(): Devuelve la cadena en mayúsculas.
+ - str.toLowerCase(): Devuelve la cadena en minúsculas.
+ - str.toCharArray(): Convierte esta cadena en un nuevo array de caracteres.
+## Validacion
+ - str.equals(String anotherString): Compara si dos cadenas son iguales.
+ - str.contains(CharSequence s): Devuelve true si la cadena contiene la secuencia especificada.
+ - str.startsWith(String prefix): Devuelve true si la cadena comienza con el prefijo especificado.
+ - str.endsWith(String suffix): Devuelve true si la cadena termina con el sufijo especificado.
+ - str.isEmpty(): Devuelve true si la longitud de la cadena es 0.
+ - str.matches(String regex): Indica si esta cadena coincide con la expresión regular dada.
+ - str.compareTo(String anotherString): Compara dos cadenas lexicográficamente.
+ - str.compareToIgnoreCase(String str): Compara dos cadenas lexicográficamente, ignorando las diferencias entre mayúsculas y minúsculas.
+ - str.contentEquals(CharSequence cs): Compara esta cadena con la secuencia de caracteres especificada.
+ - - str.regionMatches(int toffset, String other, int ooffset, int len): Prueba si las subcadenas de esta cadena y la cadena especificada son iguales.
+- str.regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len): Prueba si las subcadenas de esta cadena y la cadena especificada son iguales, ignorando las diferencias entre mayúsculas y minúsculas.
+## indices
+ - str.indexOf(String str): Devuelve el índice de la primera aparición de la cadena especificada.
+ - str.lastIndexOf(String str): Devuelve el índice de la última aparición de la cadena especificada.
+## Remplazan
+ -str. replace(char oldChar, char newChar): Reemplaza todas las apariciones del carácter especificado.
+ - str.trim(): Elimina los espacios en blanco iniciales y finales.
+ - str.split(String regex): Divide la cadena en un array de cadenas.
+   >String[] words = str.split(", "); // ["Hello", "world!"]
+## Bytes 
+- str.getBytes(): Codifica esta cadena en una secuencia de bytes usando el conjunto de caracteres predeterminado de la plataforma.
+  >str.byte[] bytes = str.getBytes(); // [72, 101, 108, 108, 111]
+-  str.getBytes(Charset charset): Codifica esta cadena en una secuencia de bytes usando el conjunto de caracteres especificado.
+   >byte[] bytesUTF8 = str.getBytes(StandardCharsets.UTF_8);
+- str.getBytes(String charsetName): Codifica esta cadena en una secuencia de bytes usando el conjunto de caracteres especificado.
+- str.getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin): Copia los caracteres de la cadena en un array de caracteres.
+
+
+
+
+
+
+  
 ## Math:
 - Math.max(a, b): Devuelve el máximo de dos números.
 - Math.min(a, b): Devuelve el mínimo de dos números.
@@ -75,47 +138,7 @@ Algunas clases utilitarias en el paquete java.util y otros paquetes estándar de
 - get(index): Obtiene el elemento en la posición especificada.
 - size(): Devuelve el número de elementos en la lista.
 - 
-## String:
-- str.length(): Devuelve la longitud de la cadena.
-- str.substring(int beginIndex, int endIndex): Devuelve una nueva cadena que es un subconjunto de la cadena original.
-  >String sub = str.substring(0, 2); // "He"
-  >
- - str.toUpperCase(): Devuelve la cadena en mayúsculas.
- - str.toLowerCase(): Devuelve la cadena en minúsculas.
- - str.equals(String anotherString): Compara si dos cadenas son iguales.
- - str.contains(CharSequence s): Devuelve true si la cadena contiene la secuencia especificada.
- - str.indexOf(String str): Devuelve el índice de la primera aparición de la cadena especificada.
- - str.lastIndexOf(String str): Devuelve el índice de la última aparición de la cadena especificada.
- -str. replace(char oldChar, char newChar): Reemplaza todas las apariciones del carácter especificado.
- - str.trim(): Elimina los espacios en blanco iniciales y finales.
- - str.split(String regex): Divide la cadena en un array de cadenas.
-   >String[] words = str.split(", "); // ["Hello", "world!"]
-- str.startsWith(String prefix): Devuelve true si la cadena comienza con el prefijo especificado.
-- str.endsWith(String suffix): Devuelve true si la cadena termina con el sufijo especificado.
-- str.isEmpty(): Devuelve true si la longitud de la cadena es 0.
-- str.matches(String regex): Indica si esta cadena coincide con la expresión regular dada.
-- str.compareTo(String anotherString): Compara dos cadenas lexicográficamente.
-- str.compareToIgnoreCase(String str): Compara dos cadenas lexicográficamente, ignorando las diferencias entre mayúsculas y minúsculas.
-- str. concat(String str): Concatena la cadena especificada al final de esta cadena.
-- str.valueOf(): Métodos estáticos que convierten diferentes tipos de datos en cadenas.
-- str.codePointAt(int index): Devuelve el valor Unicode del carácter en el índice especificado.
-- str.codePointBefore(int index): Devuelve el valor Unicode del carácter antes del índice especificado.
-- str.codePointCount(int beginIndex, int endIndex): Devuelve el número de valores Unicode en la subcadena especificada.
-- str.contentEquals(CharSequence cs): Compara esta cadena con la secuencia de caracteres especificada.
-- str.getBytes(): Codifica esta cadena en una secuencia de bytes usando el conjunto de caracteres predeterminado de la plataforma.
-  >str.byte[] bytes = str.getBytes(); // [72, 101, 108, 108, 111]
--  str.getBytes(Charset charset): Codifica esta cadena en una secuencia de bytes usando el conjunto de caracteres especificado.
-   >byte[] bytesUTF8 = str.getBytes(StandardCharsets.UTF_8);
-- str.getBytes(String charsetName): Codifica esta cadena en una secuencia de bytes usando el conjunto de caracteres especificado.
-- str.getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin): Copia los caracteres de la cadena en un array de caracteres.
-- str.regionMatches(int toffset, String other, int ooffset, int len): Prueba si las subcadenas de esta cadena y la cadena especificada son iguales.
-- str.regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len): Prueba si las subcadenas de esta cadena y la cadena especificada son iguales, ignorando las diferencias entre mayúsculas y minúsculas.
-- str.subSequence(int beginIndex, int endIndex): Devuelve una nueva secuencia de caracteres que es una subsecuencia de esta secuencia.
-- str.toCharArray(): Convierte esta cadena en un nuevo array de caracteres.
-- str.join(CharSequence delimiter, CharSequence... elements): Devuelve una nueva cadena que es la concatenación de los elementos, separados por el delimitador especificado.
-- str.format(String format, Object... args): Devuelve una cadena formateada usando la cadena de formato especificada y los argumentos.
-- str.repeat(int count): Devuelve una cadena cuya representación es la concatenación de esta cadena repetida el número de veces especificado.
-  
+
 # Math
 - Math.max(a, b): Devuelve el mayor de los dos números.
 - Math.min(a, b): Devuelve el menor de los dos números.
